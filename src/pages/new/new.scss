@@ -1,0 +1,78 @@
+.new {
+    width: 100%;
+    display: flex;
+
+    .new-container {
+        flex: 6;
+
+        .top, .bottom {
+            padding: 10px;
+            box-shadow: 4px 5px 15px -7px rgba(0,0,0,0.69);
+            -webkit-box-shadow: 3px 5px 15px -7px rgba(0,0,0,0.69);
+            -moz-box-shadow: 3px 5px 15px -7px rgba(0,0,0,0.69);
+            margin: 20px;
+            display: flex;
+
+            .left {
+                flex: 1;
+                text-align: center;
+
+                img {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+
+            .right {
+                flex: 2;
+
+                form {
+                    display: flex;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+                    gap: 30px;
+
+                    .form-input {
+                        width: 40%;
+
+                        input {
+                            width: 100%;
+                            padding: 5px;
+                            border: none;
+                            border-bottom: 1px solid grey;
+                            outline: none;
+                        }
+
+                        label {
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+
+                            .icon {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
+                    button {
+                        width: 150px;
+                        padding: 10px;
+                        border: none;
+                        background-color: teal;
+                        color: white;
+                        font-weight: bold;
+                        cursor: pointer;
+                        margin-top: 10px;
+                    }
+                }
+            }
+
+            h1 {
+                color: gray;
+                font-size: 20px;
+            }
+        }
+    }
+}
